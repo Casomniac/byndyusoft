@@ -17,7 +17,6 @@ const getMinSum = (arr) => {
       if (numArr[i] <= firstMin) {
           secondMin = firstMin;
           firstMin = numArr[i]
-
       } else if (numArr[i] < secondMin){
           secondMin = numArr[i]
       }
@@ -27,7 +26,4 @@ const getMinSum = (arr) => {
   return secondMin + firstMin
 };
 
-getMinSum([4, 0, 3, 19, 492, -10, 1]); // should return -10
-getMinSum(['gdfgdfg', 'gfdhytjyjy', 'hgfhfgh']); // should return error
-getMinSum([]); // should return error
-getMinSum([4]); // should return error
+module.exports = getMinSum;
